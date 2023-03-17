@@ -1,14 +1,18 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-#include <ctype.h>
 
+/**
+ * main - prints the alphabet in lowercase,
+ * followed by a new line
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	for(int x = 'A'; x <= 'Z'; x++)
+	char dx;
+
+	for (dx = 'a'; dx <= 'z'; dx++)
 	{
-	int lower_x = tolower(x);
-	putchar(lower_x);
+		putchar(dx);
 	}
-return(0);	
+	putchar('\n');
+	return (0);
 }
